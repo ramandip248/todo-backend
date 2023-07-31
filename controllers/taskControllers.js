@@ -17,7 +17,7 @@ module.exports.allTask = async (req, res) => {
       // Return the newly created task in the response
       res.status(201).json(newTask);
     } catch (error) {
-      console.log('Add task error:', error);
+      // console.log('Add task error:', error);
       res.status(500).json({ message: 'Failed to add task' });
     }
   };
