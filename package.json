@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "client": "npm start --prefix ../frontend/todo_frontend_app",
-    "dev": "concurrently \"npm start\" \"npm run client\""
+    "build" : "npm install"
+    
   },
   "author": "",
   "license": "ISC",
