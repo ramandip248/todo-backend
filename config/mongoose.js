@@ -1,7 +1,9 @@
 
   const mongoose = require('mongoose');
+  const dotenv = require('dotenv');
+  dotenv.config();
 
-  mongoose.connect("mongodb://localhost:27017/todo-list");
+  mongoose.connect(process.env.MONGO_LOCAL_URI);
   
   const db = mongoose.connection;
   
